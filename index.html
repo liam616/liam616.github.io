@@ -11,530 +11,528 @@
   <body>
     <script>
       float enemyX;
-float enemyX2;
-float enemyX3;
-float enemyX4;
-float enemyX5;
-float enemyX6;
-float enemyX7;
-float enemyX8;
-float enemyX9;
-float enemyX10;
-float enemyX11;
-float enemyX12;
-float enemyX13;
-float enemyX14;
-float enemyX15;
-float enemyX16;
-float enemyX17;
-float enemyX18;
-float enemyX19;
-float enemyX20;
-float enemyY;
-float enemyY2;
-float enemyY3;
-float enemyY4;
-float enemyY5;
-float enemyY6;
-float enemyY7;
-float enemyY8;
-float enemyY9;
-float enemyY10;
-float enemyY11;
-float enemyY12;
-float enemyY13;
-float enemyY14;
-float enemyY15;
-float enemyY16;
-float enemyY17;
-float enemyY18;
-float enemyY19;
-float enemyY20;
+      float enemyX2;
+      float enemyX3;
+      float enemyX4;
+      float enemyX5;
+      float enemyX6;
+      float enemyX7;
+      float enemyX8;
+      float enemyX9;
+      float enemyX10;
+      float enemyX11;
+      float enemyX12;
+      float enemyX13;
+      float enemyX14;
+      float enemyX15;
+      float enemyX16;
+      float enemyX17;
+      float enemyX18;
+      float enemyX19;
+      float enemyX20;
+      float enemyY;
+      float enemyY;
+      float enemyY2;
+      float enemyY3;
+      float enemyY4;
+      float enemyY5;
+      float enemyY6;
+      float enemyY7;
+      float enemyY8;
+      float enemyY9;
+      float enemyY10;
+      float enemyY11;
+      float enemyY12; 
+      float enemyY13;
+      float enemyY14;
+      float enemyY15;
+      float enemyY16;
+      float enemyY17;
+      float enemyY18;
+      float enemyY19;
+      float enemyY20;
 
-float playerX;
-float playerY;
-float playerXRadius;
-float playerYRadius;
+      float playerX;
+      float playerY;
+      float playerXRadius;
+      float playerYRadius;
 
-float enemyXRadius;
-float enemyX2Radius;
-float enemyX3Radius;
-float enemyX4Radius;
-float enemyX5Radius;
-float enemyX6Radius;
-float enemyX7Radius;
-float enemyX8Radius;
-float enemyX9Radius;
-float enemyX10Radius;
-float enemyX11Radius;
-float enemyX12Radius;
-float enemyX13Radius;
-float enemyX14Radius;
-float enemyX15Radius;
-float enemyX16Radius;
-float enemyX17Radius;
-float enemyX18Radius;
-float enemyX19Radius;
-float enemyX20Radius;
-float enemyYRadius;
-float enemyY2Radius;
-float enemyY3Radius;
-float enemyY4Radius;
-float enemyY5Radius;
-float enemyY6Radius;
-float enemyY7Radius;
-float enemyY8Radius;
-float enemyY9Radius;
-float enemyY10Radius;
+      float enemyXRadius;
+      float enemyX2Radius;
+      float enemyX3Radius;
+      float enemyX4Radius;
+      float enemyX5Radius;
+      float enemyX6Radius; 
+      float enemyX7Radius;
+      float enemyX8Radius;
+      float enemyX9Radius;
+      float enemyX10Radius;
+      float enemyX11Radius;
+      float enemyX12Radius;
+      float enemyX13Radius;
+      float enemyX14Radius;
+      float enemyX15Radius;
+      float enemyX16Radius;
+      float enemyX17Radius;
+      float enemyX18Radius;
+      float enemyX19Radius;
+      float enemyX20Radius;
+      float enemyYRadius;
+      float enemyY2Radius;
+      float enemyY3Radius;
+      float enemyY4Radius;
+      float enemyY5Radius;
+      float enemyY6Radius;
+      float enemyY7Radius;
+      float enemyY8Radius;
+      float enemyY9Radius;
+      float enemyY10Radius; 
 
-float pipeTop;
-float pipeTop2;
-float pipeTop3;
-float pipeTop4;
-float pipeTop5;
-float pipeTop6;
-float pipeTop7;
-float pipeTop8;
-float pipeTop9;
-float pipeTop10;
+      float pipeTop;
+      float pipeTop2;
+      float pipeTop3; 
+      float pipeTop4;
+      float pipeTop5;
+      float pipeTop6;
+      float pipeTop7;
+      float pipeTop8;
+      float pipeTop9;
+      float pipeTop10;
 
-float player;
-float player2;
-float eye;
-float beak;
-float tail;
-float timer;
-float healthBar;
+      float player;
+      float player2;
+      float eye;
+      float beak;
+      float tail;
+      float timer;
+      float healthBar;
 
-PImage background2;
-PImage pipe;
-PImage pipe1;
-PImage pipe2;
-PImage pipe3;
-PImage pipe4;
-PImage pipe5;
-PImage pipe6;
-PImage pipe7;
-PImage pipe8;
-PImage pipe9;
-PImage pipe10;
-
-
-void setup()  {
-  size(800,500);
-  player = 300;
-  player2 = 310;
-  eye = 295;
-  beak = 295;
-  tail = 305;
-  healthBar = 110;
-  
-  background2 = loadImage("background2.png"); 
-  background2.resize(800,600);
-  
-  rectMode(CENTER);
-  pipe = loadImage("pipe.png");
-  pipe.resize(60,150);
-  
-  pipe2 = loadImage("pipe2.png");
-  pipe2.resize(60,150);
-  
-  pipe3 = loadImage("pipe3.png");
-  pipe3.resize(60,225);
-  
-  pipe4 = loadImage("pipe4.png");
-  pipe4.resize(60,75);
-  
-  pipe5 = loadImage("pipe5.png");
-  pipe5.resize(60,75);
-  
-  pipe6 = loadImage("pipe6.png");
-  pipe6.resize(60,225);
-  
-  pipe7 = loadImage("pipe7.png");
-  pipe7.resize(60,125);
-  
-  pipe8 = loadImage("pipe8.png");
-  pipe8.resize(60,175);
-  
-  pipe9 = loadImage("pipe9.png");
-  pipe9.resize(60,175);
-  
-  pipe10 = loadImage("pipe10.png");
-  pipe10.resize(60,175);
-  
-  
-
- enemyX = 1630;
- enemyX2 = 1630;
- enemyX3 = 2030;
- enemyX4 = 2030;
- enemyX5 = 2430;
- enemyX6 = 2430;
- enemyX7 = 2830;
- enemyX8 = 2830;
- enemyX9 = 3230;
- enemyX10 = 3230;
-
+      PImage background2;
+      PImage pipe;
+      PImage pipe1;
+      PImage pipe2;
+      PImage pipe3;
+      PImage pipe4;
+      PImage pipe5;
+      PImage pipe6;
+      PImage pipe7;
+      PImage pipe8;
+      PImage pipe9;
+      PImage pipe10;
  
- enemyXRadius = 60;
- enemyX2Radius = 60;
- enemyX3Radius = 60;
- enemyX4Radius = 60;
- enemyX5Radius = 60;
- enemyX6Radius = 60;
- enemyX7Radius = 60;
- enemyX8Radius = 60;
- enemyX9Radius = 60;
- enemyX10Radius = 60;
-    
- enemyY3Radius = 450;
- enemyY4Radius = 150;
- enemyY5Radius =150;
- enemyY6Radius = 450;
- enemyY7Radius = 250;
- enemyY8Radius = 350;
- enemyY9Radius = 350;
- enemyY10Radius = 350;
- 
- pipeTop = 1630;
- pipeTop2 = 1630;
- pipeTop3 = 2030;
- pipeTop4 = 2030;
- pipeTop5 = 2430;
- pipeTop6 = 2430;
- pipeTop7 = 2830;
- pipeTop8 = 2830;
- pipeTop9 = 3230;
- pipeTop10 = 3230;
-}
 
-void draw()   {
-  noStroke();
-  image(background2,0,-100);
-  fill(255,124,0);
-  rect(210,beak,16,5);
-  
-  fill(255,13,86);
-  ellipse(185,tail,12,12);
-  ellipse(200,player,30,30);
-  
-  fill(255);
-  ellipse(200,player2,20,10);
-  ellipse(207,eye,5,5);
-  
-  rectMode(CENTER);
-    fill(29,224,0);
-      rect(enemyX,0,enemyXRadius, enemyYRadius);
-      image(pipe,enemyX-30,0);
-      rect(enemyX2,500,enemyX2Radius, enemyY2Radius);
-      image(pipe2,enemyX2-30,350);
-      rect(enemyX3,0,enemyX3Radius, enemyY3Radius);
-      image(pipe3,enemyX3-30,0);
-      rect(enemyX4,500,enemyX4Radius, enemyY4Radius);
-      image(pipe4,enemyX4-30,425);
-      rect(enemyX5,0,enemyX5Radius, enemyY5Radius);
-      image(pipe5,enemyX5-30,0);
-      rect(enemyX6,500,enemyX6Radius, enemyY6Radius);
-      image(pipe6,enemyX6-30,275);
-      rect(enemyX7,0,enemyX7Radius, enemyY7Radius);
-      image(pipe7,enemyX7-30,0);
-      rect(enemyX8,500,enemyX8Radius, enemyY8Radius);
-      image(pipe8,enemyX8-30,325);
-      rect(enemyX9,0,enemyX9Radius, enemyY9Radius);
-      image(pipe9,enemyX9-30,0);
-      rect(enemyX10,500,enemyX10Radius, enemyY10Radius);
-      image(pipe10,enemyX10-30,325);
-      
-    fill(9,195,36);
-      rect(pipeTop,150,80,20);
-      rect(pipeTop2,340,80,20);
-      rect(pipeTop3,420,80,20);
-      rect(pipeTop4,220,80,20);
-      rect(pipeTop5,270,80,20);
-      rect(pipeTop6,75,80,20);
-      rect(pipeTop7,130,80,20);
-      rect(pipeTop8,320,80,20);
-      rect(pipeTop9,180,80,20);
-      rect(pipeTop10,330,80,20);
-      
 
- enemyX = enemyX - 5;
- enemyX2 = enemyX2 - 5;
- enemyX3 = enemyX3 - 5;
- enemyX4 = enemyX4 - 5;
- enemyX5 = enemyX5 - 5;
- enemyX6 = enemyX6 - 5;
- enemyX7 = enemyX7 - 5;
- enemyX8 = enemyX8 - 5;
- enemyX9 = enemyX9 - 5;
- enemyX10 = enemyX10 - 5;
- 
- pipeTop = pipeTop - 5;
-  pipeTop2 = pipeTop2 - 5;
-   pipeTop3 = pipeTop3 - 5;
-    pipeTop4 = pipeTop4 - 5;
-     pipeTop5 = pipeTop5 - 5;
-      pipeTop6 = pipeTop6 - 5;
-       pipeTop7 = pipeTop7 - 5;
-        pipeTop8 = pipeTop8 - 5;
-         pipeTop9 = pipeTop9 - 5;
-          pipeTop10 = pipeTop10 - 5;
- 
- 
-  fill(0);
-   rect(0,0,240,30);
- 
-  fill(255,0,0);  
-   rect(healthBar,10,10,10);
+      void setup()  {
+        size(800,500);
+        player = 300;
+        player2 = 310;
+        eye = 295;
+        beak = 295;
+        tail = 305;
+        healthBar = 110;
+  
+        background2 = loadImage("background2.png"); 
+        background2.resize(800,600);
+  
+        rectMode(CENTER);
+        pipe = loadImage("pipe.png");
+        pipe.resize(60,150);
    
-  fill(9,180,36);
-   rect(0,0,240,10);
-   rect(0,17,240,7);
-   rect(0,0,10,30);
-   rect(116.5,0,7,30);
- 
-  
-  if (keyPressed == true)  {
-    if (key == ' ')
-    player = player-10;
-  }
-   if (keyPressed == true)  {
-    if (key == ' ')
-    player2 = player2-10;
-  }
-  if (keyPressed == true)  {
-    if (key == ' ')
-    eye = eye-10;
-  }
-  if (keyPressed == true)  {
-    if (key == ' ')
-    beak = beak-10;
-  }
-  if (keyPressed == true)  {
-    if (key == ' ')
-    tail = tail-10;
-  }
-  if (keyPressed == false)  {
-    player = player + 5;
-  }
-  if (player > 450)  {
-    player = player - 5;
-  }
-  if (keyPressed == false)  {
-    eye = eye + 5;
-  }
-  if (keyPressed == false)  {
-    beak = beak + 5;
-  }
-  if (keyPressed == false)  {
-    tail = tail + 5;
-  }
-   if (keyPressed == false)  {
-    player2 = player2 + 5;
-  }
-  if (player2 > 460)  {
-    player2 = player2 - 5;
-  }
-  if (eye > 445)  {
-    eye = eye - 5;
-  }
-  if (beak > 445)  {
-    beak = beak - 5;
-  }
-  if (tail > 455)  {
-    tail = tail - 5;
-  }
-  
-  if(player > 599)  {
-    player = player + 10;
-  }
-  
-   if (enemyX < -40)  {
-   enemyX = 2000;
- }
-  if (enemyX2 < -40)  {
-   enemyX2 = 2000;
- }
-  if (enemyX3 < -40)  {
-   enemyX3 = 2000;
- }
-  if (enemyX4 < -40)  {
-   enemyX4 = 2000;
- }
-  if (enemyX5 < -40)  {
-   enemyX5 = 2000;
- }
-  if (enemyX6 < -40)  {
-   enemyX6 = 2000;
- }
-  if (enemyX7 < -40)  {
-   enemyX7 = 2000;
- }
-  if (enemyX8 < -40)  {
-   enemyX8 = 2000;
- }
-  if (enemyX9 < -40)  {
-   enemyX9 = 2000;
- }
-  if (enemyX10 < -40)  {
-   enemyX10 = 2000;
-  }
-  
-   if (pipeTop < -40)  {
-   pipeTop = 2000;
-  }
-   if (pipeTop2 < -40)  {
-   pipeTop2 = 2000;
-  }
-   if (pipeTop3 < -40)  {
-   pipeTop3 = 2000;
-  }
-   if (pipeTop4 < -40)  {
-   pipeTop4 = 2000;
-  }
-   if (pipeTop5 < -40)  {
-   pipeTop5 = 2000;
-  }
-   if (pipeTop6 < -40)  {
-   pipeTop6 = 2000;
-  }
-   if (pipeTop7 < -40)  {
-   pipeTop7 = 2000;
-  }
-   if (pipeTop8 < -40)  {
-   pipeTop8 = 2000;
-  }
-   if (pipeTop9 < -40)  {
-   pipeTop9 = 2000;
-  }
-   if (pipeTop10 < -40)  {
-   pipeTop10 = 2000;
-  }
-
-
-   if (dist(200, player, enemyX, 0)  < enemyXRadius*3)  {
-     healthBar = healthBar - 5;
-   }
+        pipe2 = loadImage("pipe2.png");
+        pipe2.resize(60,150);
    
-  if (dist(200, player, enemyX2, 500)  < enemyX2Radius*2.5)  {
-     healthBar = healthBar - 5;
-  } 
-   if (dist(200, player, enemyX3, 0)  < enemyX3Radius*2.5)  {
-     healthBar = healthBar - 5;
-  } 
-   if (dist(200, player, enemyX4, 500)  < enemyX4Radius*2)  {
-     healthBar = healthBar - 5;
-  } 
-   if (dist(200, player, enemyX5, 0)  < enemyX5Radius*2)  {
-   healthBar = healthBar - 5;
-  } 
-   if (dist(200, player, enemyX6, 500)  < enemyX6Radius*2.5)  {
-   healthBar = healthBar - 5;
-  } 
-   if (dist(200, player, enemyX7, 0)  < enemyX7Radius*2.5)  {
-    healthBar = healthBar - 5;
-  } 
-   if (dist(200, player, enemyX8, 500)  < enemyX8Radius*2.5)  {
-    healthBar = healthBar - 5;
-  } 
-   if (dist(200, player, enemyX9, 0)  < enemyX9Radius*2.5)  {
-     healthBar = healthBar - 5;
-  } 
-   if (dist(200, player, enemyX10, 500)  < enemyX10Radius*2.5)  {
-      healthBar = healthBar - 5;
-  } 
+        pipe3 = loadImage("pipe3.png");
+        pipe3.resize(60,225);
   
-  if (healthBar < 11)  {
+        pipe4 = loadImage("pipe4.png");
+        pipe4.resize(60,75);
+  
+        pipe5 = loadImage("pipe5.png");
+        pipe5.resize(60,75);
+  
+        pipe6 = loadImage("pipe6.png");
+        pipe6.resize(60,225);
+  
+        pipe7 = loadImage("pipe7.png");
+        pipe7.resize(60,125);
+  
+        pipe8 = loadImage("pipe8.png");
+        pipe8.resize(60,175);
+   
+        pipe9 = loadImage("pipe9.png");
+        pipe9.resize(60,175);
+  
+        pipe10 = loadImage("pipe10.png");
+        pipe10.resize(60,175);
+  
+  
+
+        enemyX = 1630;
+        enemyX2 = 1630;
+        enemyX3 = 2030;
+        enemyX4 = 2030;
+        enemyX5 = 2430;
+        enemyX6 = 2430;
+        enemyX7 = 2830;
+        enemyX8 = 2830;
+        enemyX9 = 3230;
+        enemyX10 = 3230;
+
+ 
+        enemyXRadius = 60;
+        enemyX2Radius = 60;
+        enemyX3Radius = 60;
+        enemyX4Radius = 60;
+        enemyX5Radius = 60;
+        enemyX6Radius = 60;
+        enemyX7Radius = 60;
+        enemyX8Radius = 60;
+        enemyX9Radius = 60;
+        enemyX10Radius = 60;
     
- enemyX = enemyX + 5;
- enemyX2 = enemyX2 + 5;
- enemyX3 = enemyX3 + 5;
- enemyX4 = enemyX4 + 5;
- enemyX5 = enemyX5 + 5;
- enemyX6 = enemyX6 + 5;
- enemyX7 = enemyX7 + 5;
- enemyX8 = enemyX8 + 5;
- enemyX9 = enemyX9 + 5;
- enemyX10 = enemyX10 + 5;
-  }
+        enemyY3Radius = 450;
+        enemyY4Radius = 150;
+        enemyY5Radius =150;
+        enemyY6Radius = 450;
+        enemyY7Radius = 250;
+        enemyY8Radius = 350;
+        enemyY9Radius = 350;
+        enemyY10Radius = 350;
+ 
+        pipeTop = 1630;
+        pipeTop2 = 1630;
+        pipeTop3 = 2030;
+        pipeTop4 = 2030;
+        pipeTop5 = 2430;
+        pipeTop6 = 2430;
+        pipeTop7 = 2830;
+        pipeTop8 = 2830;
+        pipeTop9 = 3230;
+        pipeTop10 = 3230;
+       }
+
+      void draw()   {
+        noStroke();
+        image(background2,0,-100);
+        fill(255,124,0);
+        rect(210,beak,16,5);
   
-  if (healthBar < 11)  {
-    
-  pipeTop = pipeTop + 5;
-  pipeTop2 = pipeTop2 + 5;
-   pipeTop3 = pipeTop3 + 5;
-    pipeTop4 = pipeTop4 + 5;
-     pipeTop5 = pipeTop5 + 5;
-      pipeTop6 = pipeTop6 + 5;
-       pipeTop7 = pipeTop7 + 5;
-        pipeTop8 = pipeTop8 + 5;
-         pipeTop9 = pipeTop9 + 5;
-          pipeTop10 = pipeTop10 + 5;
-  }
+        fill(255,13,86);
+        ellipse(185,tail,12,12);
+        ellipse(200,player,30,30);
   
-  if (player > 500)  {
-    player = player +10;
-    player2 = player2 + 10;
-    beak = beak + 10;
-    tail = tail+ 10;
-    eye = eye + 10;
-  }
-          
-   if (keyPressed == true)  {
-     if (key =='r')  {
+        fill(255);
+        ellipse(200,player2,20,10);
+        ellipse(207,eye,5,5);
+  
+        rectMode(CENTER);
+        fill(29,224,0);
+        rect(enemyX,0,enemyXRadius, enemyYRadius);
+        image(pipe,enemyX-30,0);
+        rect(enemyX2,500,enemyX2Radius, enemyY2Radius);
+        image(pipe2,enemyX2-30,350);
+        rect(enemyX3,0,enemyX3Radius, enemyY3Radius);
+        image(pipe3,enemyX3-30,0);
+        rect(enemyX4,500,enemyX4Radius, enemyY4Radius);
+        image(pipe4,enemyX4-30,425);
+        rect(enemyX5,0,enemyX5Radius, enemyY5Radius);
+        image(pipe5,enemyX5-30,0);
+        rect(enemyX6,500,enemyX6Radius, enemyY6Radius);
+        image(pipe6,enemyX6-30,275);
+        rect(enemyX7,0,enemyX7Radius, enemyY7Radius);
+        image(pipe7,enemyX7-30,0);
+        rect(enemyX8,500,enemyX8Radius, enemyY8Radius);
+        image(pipe8,enemyX8-30,325);
+        rect(enemyX9,0,enemyX9Radius, enemyY9Radius);
+        image(pipe9,enemyX9-30,0);
+        rect(enemyX10,500,enemyX10Radius, enemyY10Radius);
+        image(pipe10,enemyX10-30,325);
        
-       enemyX = enemyX - 5;
- enemyX2 = enemyX2 - 5;
- enemyX3 = enemyX3 - 5;
- enemyX4 = enemyX4 - 5;
- enemyX5 = enemyX5 - 5;
- enemyX6 = enemyX6 - 5;
- enemyX7 = enemyX7 - 5;
- enemyX8 = enemyX8 - 5;
- enemyX9 = enemyX9 - 5;
- enemyX10 = enemyX10 - 5;
- 
- pipeTop = pipeTop - 5;
-  pipeTop2 = pipeTop2 - 5;
-   pipeTop3 = pipeTop3 - 5;
-    pipeTop4 = pipeTop4 - 5;
-     pipeTop5 = pipeTop5 - 5;
-      pipeTop6 = pipeTop6 - 5;
-       pipeTop7 = pipeTop7 - 5;
-        pipeTop8 = pipeTop8 - 5;
-         pipeTop9 = pipeTop9 - 5;
-          pipeTop10 = pipeTop10 - 5;
-          
-          enemyX = 1630;
- enemyX2 = 1630;
- enemyX3 = 2030;
- enemyX4 = 2030;
- enemyX5 = 2430;
- enemyX6 = 2430;
- enemyX7 = 2830;
- enemyX8 = 2830;
- enemyX9 = 3230;
- enemyX10 = 3230;
- 
- pipeTop = 1630;
- pipeTop2 = 1630;
- pipeTop3 = 2030;
- pipeTop4 = 2030;
- pipeTop5 = 2430;
- pipeTop6 = 2430;
- pipeTop7 = 2830;
- pipeTop8 = 2830;
- pipeTop9 = 3230;
- pipeTop10 = 3230;
- 
-  healthBar = 110;
+        fill(9,195,36);
+        rect(pipeTop,150,80,20);
+        rect(pipeTop2,340,80,20);
+        rect(pipeTop3,420,80,20);
+        rect(pipeTop4,220,80,20);
+        rect(pipeTop5,270,80,20);
+        rect(pipeTop6,75,80,20);
+        rect(pipeTop7,130,80,20);
+        rect(pipeTop8,320,80,20);
+        rect(pipeTop9,180,80,20);
+        rect(pipeTop10,330,80,20);
       
-    }
-     
-  }
+
+        enemyX = enemyX - 5;
+        enemyX2 = enemyX2 - 5;
+        enemyX3 = enemyX3 - 5;
+        enemyX4 = enemyX4 - 5;
+        enemyX5 = enemyX5 - 5;
+        enemyX6 = enemyX6 - 5;
+        enemyX7 = enemyX7 - 5;
+        enemyX8 = enemyX8 - 5;
+        enemyX9 = enemyX9 - 5;
+        enemyX10 = enemyX10 - 5;
+ 
+        pipeTop = pipeTop - 5;
+        pipeTop2 = pipeTop2 - 5;
+        pipeTop3 = pipeTop3 - 5;
+        pipeTop4 = pipeTop4 - 5;
+        pipeTop5 = pipeTop5 - 5;
+        pipeTop6 = pipeTop6 - 5;
+        pipeTop7 = pipeTop7 - 5;
+        pipeTop8 = pipeTop8 - 5;
+        pipeTop9 = pipeTop9 - 5;
+        pipeTop10 = pipeTop10 - 5;
+ 
+ 
+        fill(0);
+        rect(0,0,240,30);
+ 
+        fill(255,0,0);  
+        rect(healthBar,10,10,10);
+   
+        fill(9,180,36);
+        rect(0,0,240,10);
+        rect(0,17,240,7);
+        rect(0,0,10,30);
+        rect(116.5,0,7,30);
+ 
   
-}
+        if (keyPressed == true)  {
+          if (key == ' ')
+             player = player-10;
+          }
+        if (keyPressed == true)  {
+          if (key == ' ')
+             player2 = player2-10;
+          }
+        if (keyPressed == true)  {
+          if (key == ' ')
+             eye = eye-10;
+          }
+        if (keyPressed == true)  {
+          if (key == ' ')
+             beak = beak-10;
+          }
+        if (keyPressed == true)  {
+          if (key == ' ')
+             tail = tail-10;
+          }
+        if (keyPressed == false)  {
+             player = player + 5;
+          }
+        if (player > 450)  {
+         player = player - 5;
+          }
+        if (keyPressed == false)  {
+         eye = eye + 5;
+          }
+        if (keyPressed == false)  {
+         beak = beak + 5;
+          }
+        if (keyPressed == false)  {
+         tail = tail + 5;
+          }
+        if (keyPressed == false)  {
+         player2 = player2 + 5;
+          }
+        if (player2 > 460)  {
+         player2 = player2 - 5;
+          }
+        if (eye > 445)  {
+         eye = eye - 5;
+          }
+        if (beak > 445)  {
+         beak = beak - 5;
+          }
+        if (tail > 455)  {
+         tail = tail - 5;
+          }
+  
+        if(player > 599)  {
+         player = player + 10;
+          }
+  
+        if (enemyX < -40)  {
+         enemyX = 2000;
+          }
+        if (enemyX2 < -40)  {
+         enemyX2 = 2000;
+          }
+        if (enemyX3 < -40)  {
+         enemyX3 = 2000;
+          }
+        if (enemyX4 < -40)  {
+         enemyX4 = 2000;
+          }
+        if (enemyX5 < -40)  {
+         enemyX5 = 2000;
+          }
+        if (enemyX6 < -40)  {
+         enemyX6 = 2000;
+          }
+        if (enemyX7 < -40)  {
+         enemyX7 = 2000;
+          }
+        if (enemyX8 < -40)  {
+         enemyX8 = 2000;
+          }
+        if (enemyX9 < -40)  {
+         enemyX9 = 2000;
+          }
+        if (enemyX10 < -40)  {
+         enemyX10 = 2000;
+          }
+  
+        if (pipeTop < -40)  {
+         pipeTop = 2000;
+          }
+        if (pipeTop2 < -40)  {
+         pipeTop2 = 2000;
+          }
+        if (pipeTop3 < -40)  {
+         pipeTop3 = 2000;
+          }
+        if (pipeTop4 < -40)  {
+         pipeTop4 = 2000;
+          }
+        if (pipeTop5 < -40)  {
+         pipeTop5 = 2000;
+          }
+        if (pipeTop6 < -40)  {
+          pipeTop6 = 2000;
+          }
+        if (pipeTop7 < -40)  {
+          pipeTop7 = 2000;
+          }
+        if (pipeTop8 < -40)  {
+         pipeTop8 = 2000;
+          }
+        if (pipeTop9 < -40)  {
+         pipeTop9 = 2000;
+          }
+        if (pipeTop10 < -40)  {
+         pipeTop10 = 2000;
+          }
+
+
+        if (dist(200, player, enemyX, 0)  < enemyXRadius*3)  {
+         healthBar = healthBar - 5;
+          }
+   
+        if (dist(200, player, enemyX2, 500)  < enemyX2Radius*2.5)  {
+         healthBar = healthBar - 5;
+          } 
+        if (dist(200, player, enemyX3, 0)  < enemyX3Radius*2.5)  {
+         healthBar = healthBar - 5;
+          } 
+        if (dist(200, player, enemyX4, 500)  < enemyX4Radius*2)  {
+         healthBar = healthBar - 5;
+          } 
+        if (dist(200, player, enemyX5, 0)  < enemyX5Radius*2)  {
+         healthBar = healthBar - 5;
+          } 
+        if (dist(200, player, enemyX6, 500)  < enemyX6Radius*2.5)  {
+         healthBar = healthBar - 5;
+          } 
+        if (dist(200, player, enemyX7, 0)  < enemyX7Radius*2.5)  {
+         healthBar = healthBar - 5;
+          } 
+        if (dist(200, player, enemyX8, 500)  < enemyX8Radius*2.5)  {
+         healthBar = healthBar - 5;
+          } 
+        if (dist(200, player, enemyX9, 0)  < enemyX9Radius*2.5)  {
+         healthBar = healthBar - 5;
+          } 
+        if (dist(200, player, enemyX10, 500)  < enemyX10Radius*2.5)  {
+         healthBar = healthBar - 5;
+          } 
+  
+        if (healthBar < 11)  {
+    
+         enemyX = enemyX + 5;
+         enemyX2 = enemyX2 + 5;
+         enemyX3 = enemyX3 + 5;
+         enemyX4 = enemyX4 + 5;
+         enemyX5 = enemyX5 + 5;
+         enemyX6 = enemyX6 + 5;
+         enemyX7 = enemyX7 + 5;
+         enemyX8 = enemyX8 + 5;
+         enemyX9 = enemyX9 + 5;
+         enemyX10 = enemyX10 + 5;
+          }
+  
+        if (healthBar < 11)  {
+    
+         pipeTop = pipeTop + 5;
+         pipeTop2 = pipeTop2 + 5;
+         pipeTop3 = pipeTop3 + 5;
+         pipeTop4 = pipeTop4 + 5;
+         pipeTop5 = pipeTop5 + 5;
+         pipeTop6 = pipeTop6 + 5;
+         pipeTop7 = pipeTop7 + 5;
+         pipeTop8 = pipeTop8 + 5;
+         pipeTop9 = pipeTop9 + 5;
+         pipeTop10 = pipeTop10 + 5;
+          }
+  
+        if (player > 500)  {
+         player = player +10;
+         player2 = player2 + 10;
+         beak = beak + 10;
+         tail = tail+ 10;
+         eye = eye + 10;
+          }
+          
+        if (keyPressed == true)  {
+         if (key =='r')  {    
+           enemyX = enemyX - 5;
+           enemyX2 = enemyX2 - 5;
+           enemyX3 = enemyX3 - 5;
+           enemyX4 = enemyX4 - 5;
+           enemyX5 = enemyX5 - 5;
+           enemyX6 = enemyX6 - 5;
+           enemyX7 = enemyX7 - 5;
+           enemyX8 = enemyX8 - 5;
+           enemyX9 = enemyX9 - 5;
+           enemyX10 = enemyX10 - 5;
+ 
+           pipeTop = pipeTop - 5;
+           pipeTop2 = pipeTop2 - 5;
+           pipeTop3 = pipeTop3 - 5;
+           pipeTop4 = pipeTop4 - 5;
+           pipeTop5 = pipeTop5 - 5;
+           pipeTop6 = pipeTop6 - 5;
+           pipeTop7 = pipeTop7 - 5;
+           pipeTop8 = pipeTop8 - 5;
+           pipeTop9 = pipeTop9 - 5;
+           pipeTop10 = pipeTop10 - 5;
+          
+           enemyX = 1630;
+           enemyX2 = 1630;
+           enemyX3 = 2030;
+           enemyX4 = 2030;
+           enemyX5 = 2430;
+           enemyX6 = 2430;
+           enemyX7 = 2830;
+           enemyX8 = 2830;
+           enemyX9 = 3230;
+           enemyX10 = 3230;
+ 
+           pipeTop = 1630;
+           pipeTop2 = 1630;
+           pipeTop3 = 2030;
+           pipeTop4 = 2030;
+           pipeTop5 = 2430;
+           pipeTop6 = 2430;
+           pipeTop7 = 2830;
+           pipeTop8 = 2830;
+           pipeTop9 = 3230;
+           pipeTop10 = 3230;
+ 
+           healthBar = 110;    
+            }     
+          }  
+        }
 
     </script>
     <canvas id="sketch" style="border: 1px solid black;"></canvas>
